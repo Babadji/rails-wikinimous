@@ -1,8 +1,17 @@
-<h1>All Articles</h1>
- <ul>
-    <% @articles.each do |article| %>
-  <li><%= link_to article.title, article_path(article.id) %></li>
-  <% end %>
-  <hr>
-  <%= link_to "Create an article", articles_new_path %>
-</ul>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <br>
+      <h1>All Articles</h1>
+       <ul>
+          <% @articles.each do |article| %>
+        <li><%= link_to article.title, article_path(article.id) %></li>
+        <% end %>
+        <hr>
+        <div class="action btn btn-primary" style="color:white">
+        <%= link_to "Create an article", articles_new_path %>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>

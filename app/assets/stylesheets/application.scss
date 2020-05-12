@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap/scss/bootstrap";
+
+.btn a {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}

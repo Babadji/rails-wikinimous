@@ -1,12 +1,19 @@
-<h1><%= @article.title %></h1>
-<br>
-<h3>Content</h3>
-<ul>
-  <li><%= @article.content %></li>
-</ul>
-<hr>
-<hr>
-<%= link_to "Update an article", edit_article_path(@article) %>
-<%= link_to "Destroy an article", article_path(@article), method: "delete", data: {confirm: "Are you sure"} %>
-<hr>
-<%= link_to "Go back to articles", articles_path %>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <br>
+      <h1><%= @article.title %></h1>
+      <br>
+      <h3>Content</h3>
+      <ul>
+        <li><%= @article.content %></li>
+      </ul>
+      <hr>
+      <hr>
+      <%= link_to "Update an article", edit_article_path(@article) %>
+      <%= link_to "Destroy an article", article_path(@article), method: "delete", data: {confirm: "Are you sure"} %>
+      <hr>
+      <%= link_to "Go back to articles", articles_path %>
+    </div>
+  </div>
+</div>
